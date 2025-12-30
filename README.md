@@ -1,55 +1,84 @@
-📈 Stock Price Prediction (Short-Term) — Machine Learning Project
 
-This project predicts the next day's closing price of a selected stock using historical data fetched from Yahoo Finance.
-The goal is to understand time series handling, data fetching using APIs, and regression-based prediction.
+# 📈 Stock Price Prediction
 
-🎯 Project Objective
+## 📌 Project Overview
 
-The main objective of this task is to:
+This project focuses on **short-term stock price prediction** using machine learning techniques.
+It predicts the **next day’s closing price** of a selected stock based on historical market data fetched from **Yahoo Finance**.
 
-✔ Fetch historical stock market data using the yfinance API
-✔ Explore and understand stock price features
-✔ Train a machine learning model (Linear Regression or Random Forest)
-✔ Predict the next day’s closing price
-✔ Compare actual vs predicted prices using plots
+The project demonstrates practical skills in **time series data handling**, **API-based data collection**, and **regression modeling**.
 
-📂 Dataset Source
+---
 
-The dataset is fetched automatically using the yfinance Python library.
-You can choose any stock such as:
+## 🎯 Project Objective
 
-AAPL – Apple
+The main objectives of this project are to:
 
-TSLA – Tesla
+* Fetch historical stock price data using the **yfinance API**
+* Analyze and understand stock market trends and features
+* Train machine learning models such as:
 
-MSFT – Microsoft
+  * Linear Regression
+  * Random Forest Regressor
+* Predict the **next trading day’s closing price**
+* Compare **actual vs predicted prices** using visual plots
 
-GOOGL – Google
+---
 
-AMZN – Amazon
+## 📂 Dataset Source
 
-🛠 Skills Practiced
+The dataset is **automatically fetched** using the `yfinance` Python library, eliminating the need for manual data downloads.
 
-📊 Time series data handling
+Supported stock symbols include (but are not limited to):
 
-📥 API-based data fetching (yfinance)
+* **AAPL** – Apple
+* **TSLA** – Tesla
+* **MSFT** – Microsoft
+* **GOOGL** – Google
+* **AMZN** – Amazon
 
-🤖 Regression modeling
+Users can easily modify the stock ticker to experiment with different companies.
 
-📈 Data visualization
+---
 
-🔍 Feature selection and preprocessing
+## 🧠 Features Used for Prediction
 
-🧠 Features Used for Prediction
+The following features are extracted from historical stock data:
 
-From historical stock data:
+* Open price
+* High price
+* Low price
+* Trading volume
+* Close price (used as the target label, shifted by one day)
 
-Open price
+These features help the model capture market behavior for short-term forecasting.
 
-High price
+---
 
-Low price
+## 🛠 Skills Practiced
 
-Volume
+This project helped develop the following skills:
 
-Close (Target label shifted by one day)
+* Time series data handling
+* API-based data fetching using **yfinance**
+* Regression modeling with machine learning
+* Data visualization and performance comparison
+* Feature selection and preprocessing
+
+---
+
+## 📊 Visualization
+
+The project includes plots that visually compare:
+
+* Actual stock prices
+* Predicted stock prices
+
+This helps in understanding model performance and prediction accuracy.
+
+---
+
+## ✅ Conclusion
+
+This project provides a hands-on introduction to financial data analysis and machine learning–based stock price prediction. It highlights how historical data and regression models can be used to make short-term forecasts while reinforcing core ML and data analysis concepts.
+
